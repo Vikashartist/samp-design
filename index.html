@@ -20,6 +20,10 @@
         box-sizing: border-box;
     }
     
+    body {
+        /* flex-wrap: wrap; */
+    }
+    
     .nav-cont {
         background-color: #650000;
         width: 100%;
@@ -275,7 +279,7 @@
     
     .principal-desk-container {
         width: 100%;
-        height: 490px;
+        height: 502px;
         background-color: rgb(255, 255, 255);
         display: flex;
         align-items: center;
@@ -287,6 +291,14 @@
         height: 480px;
         background-color: rgb(51, 51, 160);
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        transition: 0.4s;
+    }
+    
+    .principal-desk-inner-div:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transition: 0.4s;
+        /* opacity: 0.9; */
+        transform: scale(1.02);
     }
     
     .principal-desk-title {
@@ -404,6 +416,86 @@
         box-shadow: 3px 1px 6px rgb(77, 76, 76);
         text-shadow: 2px 2px 3px white;
     }
+    /* This is main-logo-section-title -container */
+    
+    .main-title-logo-container {
+        width: 620px;
+        height: 170px;
+        background-color: transparent;
+        isolation: isolate;
+        margin-left: 390px;
+        margin-top: 200px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-title-welcome-logo-cont {
+        width: 100%;
+        height: 80px;
+        background-color: transparent;
+        font-size: 50px;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+    
+    .main-title-gnp-cont {
+        width: 100%;
+        height: 80px;
+        background-color: transparent;
+        color: white;
+        font-size: 50px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+    
+    .main-title-naac-accrided-cont {
+        width: 100%;
+        height: 80px;
+        background-color: transparent;
+        font-size: 28px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    }
+    /* principal other div desc mission and vision */
+    
+    .principal-desc-vision-title {
+        width: 100%;
+        height: 50px;
+        /* background: linear-gradient(to top, #c79081 0%, #dfa579 100%); */
+        background-color: rgb(175, 174, 174);
+        font-size: 34px;
+        color: rgb(0, 0, 0);
+        font-family: "Roboto Slab", serif;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    
+    .principal-desc-vision-desc {
+        width: 100%;
+        height: 190px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(58, 57, 57);
+        font-family: "Roboto Slab", serif;
+        text-align: left;
+        align-items: center;
+        padding: 11px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
 </style>
 
 
@@ -436,6 +528,13 @@
 
 
         </div>
+        /*
+        <!-- This is main-logo-title -container section-->*/
+        <div class="main-title-logo-container">
+            <div class="main-title-welcome-logo-cont">Welcome to</div>
+            <div class="main-title-gnp-cont">Gunupur college</div>
+            <div class="main-title-naac-accrided-cont">NAAC Re - accredited with "B" Grade</div>
+        </div>
 
         <!-- This is marquee effect section -->
         <div class="announcement-marq-cont">
@@ -458,7 +557,23 @@
                 </div>
             </div>
         </div>
-        <div id="principal-desk-desc-cont" class="principal-desk-inner-div"></div>
+        <div id="principal-desk-desc-cont" class="principal-desk-inner-div">
+            <div class="principal-desc-vision-title">
+                Vision
+            </div>
+            <div class="principal-desc-vision-desc">
+                To promote qualitative value-based application-oriented courses to cope with the changes of modern time for the betterment of students and society. To promote qualitative for the betterment of students and society. To promote qualitative value-based application-oriented
+                courses to cope with the changes of modern time for the betterment of students and society. To promote qualitative value-based application-oriented courses to cope with the changes of modern time for the betterment of students and society.
+            </div>
+            <div class="principal-desc-vision-title">
+                Mission
+            </div>
+            <div class="principal-desc-vision-desc">
+                To give qualitative education, building noble character and preparing the learners to serve society.To give qualitative education, building noble character and preparing the learners to serve society.To give qualitative education, building noble character
+                and preparing the learners to serve society.To give qualitative education, building noble character and
+            </div>
+
+        </div>
     </div>
     <div class="demo-div ">
 
