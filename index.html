@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-design</title>
+    <!-- This link is for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- this is icons script -->
+    <script src="https://kit.fontawesome.com/7234580fe1.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    .nav-cont {
+        background-color: #650000;
+        width: 100%;
+        height: 48px;
+        border-bottom: 1px solid #f29509;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-cont-inner {
+        width: 90%;
+        height: 44px;
+        background-color: transparent;
+        display: flex;
+    }
+    
+    .nav-cont-phone-email {
+        width: 380px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-cont-phone {
+        width: 120px;
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        font-size: 13px;
+        padding-top: 11px;
+        padding-left: 21px;
+        transition: 0.3s;
+    }
+    
+    .nav-cont-email {
+        width: 240px;
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        font-size: 14px;
+        padding-top: 11px;
+        transition: 0.3s;
+    }
+    
+    .nav-cont-email:hover {
+        color: rgb(173, 172, 172);
+    }
+    
+    .nav-cont-phone:hover {
+        color: rgb(173, 172, 172);
+    }
+    
+    .fa-envelope-open-text {
+        margin-left: 6px;
+        margin-right: 10px;
+    }
+    
+    .fa-phone {
+        margin-right: 10px;
+    }
+    
+    .notification-cont {
+        width: 143px;
+        height: 40px;
+        background-color: #84c340;
+        margin-left: 652px;
+        margin-top: 2px;
+        font-family: "Roboto Slab", serif;
+        color: white;
+        text-align: center;
+        padding-top: 11.5px;
+        text-transform: uppercase;
+        font-size: 12.5px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+    
+    .notification-cont:hover {
+        background-color: #62922f;
+        font-weight: bolder;
+    }
+    /* This is body section css */
+    
+    .main-body-picture-cont {
+        width: 100%;
+        height: 740px;
+        position: relative;
+        /* background-image: url("college-front-bg-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat; */
+        /* filter: brightness(0.6); */
+    }
+    
+    .main-body-picture-cont:before {
+        background-image: url("college-front-bg-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: ' ';
+        position: absolute;
+        inset: 0;
+        filter: brightness(0.6);
+    }
+    /* This is body section css main-nav */
+    
+    .main-body-nav-cont {
+        width: 100%;
+        height: 74px;
+        /* background-color: rgb(136, 135, 135); */
+        backdrop-filter: blur(26px);
+        isolation: isolate;
+        display: flex;
+    }
+    
+    .main-body-nav-logo-cont {
+        width: 280px;
+        height: 74px;
+        background-color: transparent;
+        background-image: url("logo-gunpur-clg-1.png");
+        margin-left: 70px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        isolation: isolate;
+    }
+    
+    .demo-div {
+        width: 100%;
+        height: 400px;
+        background-color: #ffffff;
+        isolation: isolate;
+    }
+    
+    .main-body-nav-logo-cont {
+        isolation: isolate;
+        color: white;
+        transition: 0.4s;
+    }
+    
+    .main-body-nav-logo-cont:hover {
+        opacity: 0.7;
+        backdrop-filter: blur(10px);
+    }
+    
+    .main-body-div-section {
+        width: 70%;
+        height: 74px;
+        margin-left: 38px;
+        background-color: transparent;
+        isolation: isolate;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .main-body-nav-divs {
+        /* width: 110px; */
+        height: 40px;
+        background-color: transparent;
+        font-size: 13px;
+        font-family: "Roboto Slab", serif;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 4px;
+        transition: 0.4s;
+    }
+    
+    .fa-angle-down {
+        margin-left: 6px;
+        font-weight: bold
+    }
+    
+    #main-body-nav-about-us:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-shadow: 1px 1px 20px black;
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.4s;
+    }
+    
+    #main-body-nav-academics:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-Department:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-facilities:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-syllabus:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-naac:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-iqac:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-gallery:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    /* This is the css of principal desk container */
+    
+    .principal-desk-container {
+        width: 100%;
+        height: 490px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .principal-desk-inner-div {
+        width: 620px;
+        height: 480px;
+        background-color: rgb(51, 51, 160);
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    
+    .principal-desk-title {
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        backdrop-filter: blur(56px);
+        font-size: 34px;
+        font-family: "Roboto Slab", serif;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    .principal-desk-picture {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        background-image: url("Principal-picture.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        position: relative;
+    }
+    
+    .principal-desc-cont {
+        width: 100%;
+        height: 100px;
+        /* background-color: green; */
+        backdrop-filter: blur(56px);
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    .principal-desc-name {
+        width: 100%;
+        height: 36px;
+        background-color: transparent;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 26px;
+        font-family: "Roboto Slab", serif;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 4px rgb(54, 54, 54);
+    }
+    
+    .principal-qualification-div {
+        width: 100%;
+        height: 30px;
+        background-color: transparent;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+        text-shadow: 1px 1px 4px rgb(54, 54, 54);
+    }
+    
+    .principal-more-div {
+        width: 100px;
+        margin-left: 256px;
+        margin-top: 10px;
+        height: 20px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: "Roboto Slab", serif;
+        font-size: 13px;
+        border-radius: 6px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        transition: 0.5s;
+    }
+    
+    .principal-more-div:hover {
+        background-color: rgb(39, 34, 34);
+        color: white;
+    }
+    
+    .principal-desc-name:hover {}
+    /* This is marquess announcement container */
+    
+    .announcement-marq-cont {
+        width: 100%;
+        height: 40px;
+        isolation: isolate;
+        backdrop-filter: blur(4px);
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+        font-family: "Roboto Slab", serif;
+        box-shadow: 0 3px 10px 10px rgb(0 0 0 / 0.2);
+        text-shadow: 1px 1px 6px black;
+        letter-spacing: 1px;
+    }
+    
+    .announcement-marq-inner-1 {
+        width: 220px;
+        height: 40px;
+        background-color: #ffc000;
+        border-bottom-right-radius: 50px;
+        padding-right: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Roboto Slab", serif;
+        padding-top: 8px;
+        box-shadow: 3px 1px 6px rgb(77, 76, 76);
+        text-shadow: 2px 2px 3px white;
+    }
+</style>
+
+
+<body>
+    <!-- This is the Nav section -->
+    <div class="nav-cont">
+        <div class="nav-cont-inner">
+            <div class="nav-cont-phone-email">
+                <div class="nav-cont-phone"><i class="fa-solid fa-phone"></i>94375-81969</div>
+                <div class="nav-cont-email"><i class="fa-solid fa-envelope-open-text"></i>gunpurcollegegunpur@gmail.com</div>
+            </div>
+            <div class="notification-cont">Notification</div>
+        </div>
+    </div>
+    <!-- This is main-body section -->
+    <div class="main-body-picture-cont">
+        <div class="main-body-nav-cont">
+
+            <div class="main-body-nav-logo-cont"></div>
+            <div class="main-body-div-section">
+                <div id="main-body-nav-about-us" class="main-body-nav-divs">About us<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-academics" class="main-body-nav-divs">Academics<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-Department" class="main-body-nav-divs">Departments<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-facilities" class="main-body-nav-divs">facilities<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-syllabus" class="main-body-nav-divs">syllabus<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-naac" class="main-body-nav-divs">nacc<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-iqac" class="main-body-nav-divs">iqac<i class="fa-solid fa-angle-down"></i></div>
+                <div id="main-body-nav-gallery" class="main-body-nav-divs">gallery<i class="fa-solid fa-angle-down"></i></div>
+            </div>
+
+
+        </div>
+
+        <!-- This is marquee effect section -->
+        <div class="announcement-marq-cont">
+            <div class="announcement-marq-inner-1">announcement</div>
+            <marquee behavior="" direction="">This is a demo marquee section to test .This is a demo marquee section to test .his is a demo marquee section to test .This is a demo marquee section to testhis is a demo marquee section to test .This is a demo marquee section to test</marquee>
+        </div>
+    </div>
+
+
+    <!-- This is principal desk section -->
+    <div class="principal-desk-container">
+        <div id="principal-desk-profile-cont" class="principal-desk-inner-div">
+
+            <div class="principal-desk-picture">
+                <div class="principal-desk-title">Principal's Desk</div>
+                <div class="principal-desc-cont">
+                    <div class="principal-desc-name">Shri Sasi Bhusan Mohanty</div>
+                    <div class="principal-qualification-div">M.Sc., B.Ed., Principal, Gunupur College</div>
+                    <div class="principal-more-div">Read More<i class="fa-solid fa-angle-down" id="read-more-icons"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="principal-desk-desc-cont" class="principal-desk-inner-div"></div>
+    </div>
+    <div class="demo-div ">
+
+    </div>
+</body>
+
+</html>
+
+</html>
