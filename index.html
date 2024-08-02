@@ -517,6 +517,14 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: 0.4s;
+    }
+    
+    .notice-section-divs-inner:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transition: 0.4s;
+        /* opacity: 0.9; */
+        transform: scale(1.02);
     }
     
     .notice-div-header-cont {
@@ -576,10 +584,15 @@
         /* background-color: green; */
         text-shadow: 1px 1px 3px rgb(121, 119, 119);
         background-color: #ffffff;
-        color: #650000;
+        color: #683232;
         border-top-right-radius: 8px;
         border: 2px solid #ffc000;
         /* transform: translate(10px); */
+    }
+    
+    #notidiv-tander:hover {
+        color: rgb(117, 60, 60);
+        background-color: rgb(255, 255, 255);
     }
     
     .fa-bell {
@@ -657,12 +670,176 @@
     
     #section-tander-link {
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: #ffffff
     }
     
-    #event-sec-link {
+    #section-tander-link:hover {
         text-decoration: none;
-        color: rgb(153, 44, 44);
+        color: #650000
+    }
+    
+    #event-link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    #event-link:hover {
+        text-decoration: none;
+        color: #650000;
+    }
+    
+    a#\#event-link {
+        color: white;
+    }
+    
+    a#\#event-link:hover {
+        color: #650000;
+    }
+    
+    #frame-for-youtube-link {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .title-div-2-youtube {
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-weight: bold;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 22px;
+        font-family: "Roboto Slab", serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: 1px solid black;
+    }
+    /* <!-- This is course section csss --> */
+    
+    .course-container {
+        width: 100%;
+        height: 510px;
+        background-color: #aaa9a9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-image: url("doodle-background.jpg"); */
+        background-color: white;
+        background-size: contain;
+        background-repeat: ;
+    }
+    
+    .course-container-inner {
+        width: 92%;
+        height: 460px;
+        background-color: transparent;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: hidden;
+        /* overflow-y: scroll; */
+    }
+    
+    .course-divs-container {
+        width: 300px;
+        height: 200px;
+        background-color: #f8f8f8;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        transition: 0.4s;
+        border: 1px solid rgb(255, 255, 255);
+        /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transition: 0.4s;
+        /* opacity: 0.9; */
+    }
+    
+    .course-divs-container:hover {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        transition: 0.4s;
+        transform: scale(1.02);
+        opacity: 0.9;
+        border: 1px solid white;
+    }
+    
+    #course-div-1 {
+        background-color: rgb(93, 177, 170);
+        /* background-image: url("exami-logo.png"); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .course-divs-container-1-1exam {
+        width: 200px;
+        height: 130px;
+        background-color: transparent;
+    }
+    /* This is the inner text */
+    
+    .text-exam-1-1 {
+        color: white;
+        font-family: "Roboto Slab", serif;
+        font-size: 14px;
+        text-align: center;
+        /* letter-spacing: 1px; */
+    }
+    
+    .text-exam-1-1:hover {
+        text-shadow: 1px 1px 6px rgb(129, 129, 129);
+    }
+    
+    .logo-exam-1-1 {
+        width: 200px;
+        height: 100px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-exam-inner-1-1 {
+        width: 60px;
+        height: 60px;
+        /* background-color: rgb(96, 201, 26); */
+        background-image: url("exami-logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #course-div-2 {
+        background-color: rgb(93, 177, 170);
+    }
+    
+    #course-div-3 {
+        background-color: rgb(240, 56, 86);
+    }
+    
+    #course-div-4 {
+        background-color: rgb(39, 102, 236);
+    }
+    
+    #course-div-5 {
+        background-color: rgb(201, 231, 119);
+    }
+    
+    #course-div-6 {
+        background-color: rgb(228, 99, 131);
+    }
+    
+    #course-div-7 {
+        background-color: rgb(209, 136, 228);
+    }
+    
+    #course-div-8 {
+        background-color: rgb(109, 167, 97);
     }
 </style>
 
@@ -755,7 +932,7 @@
                 </div>
 
                 <div class="notice-div-header-cont-1" id="notice-div-header-cont-1-2">
-                    <div class="notificaiton-innerdiv">
+                    <div class="notificaiton-innerdiv" id="notidiv-tander">
                         <i class="fa-solid fa-gavel"></i>
                         <a href="#tander-sec" id="section-tander-link">tender</a>
 
@@ -765,7 +942,7 @@
                 <div class="notice-div-header-cont-1" id="notice-div-header-cont-1-2">
                     <div class="notificaiton-innerdiv">
                         <i class="fa-solid fa-calendar-days"></i>
-                        <a href="#event-sec" id="#event-sec-link">Events</a>
+                        <a href="#event-sec" id="#event-link">Events</a>
                     </div>
                 </div>
 
@@ -855,13 +1032,41 @@
             </div>
 
         </div>
-        <div class="notice-section-divs-inner " id="notice-section-divs-inner-2 "></div>
+        <div class="notice-section-divs-inner " id="notice-section-divs-inner-2 ">
+            <div class="title-div-2-youtube">
+                Our Campus
+            </div>
+            <iframe width="100%" height="412" src="https://www.youtube.com/embed/tJbEKWMPJu0?si=XbuIhV5V8Pk_LJGA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="frame-for-youtube-link"></iframe>
+        </div>
     </div>
+    <!-- This is course section -->
+    <div class="course-container">
+        <div class="course-container-inner">
+            <div class="course-divs-container" id="course-div-1">
+                <div class="course-divs-container-1-1exam">
+                    <div class="logo-exam-1-1">
+                        <div class="logo-exam-inner-1-1"></div>
+                    </div>
+                    <div class="text-exam-1-1">Examination</div>
+                </div>
+            </div>
+            <div class="course-divs-container" id="course-div-2"></div>
+            <div class="course-divs-container" id="course-div-3"></div>
+            <div class="course-divs-container" id="course-div-4"></div>
+            <div class="course-divs-container" id="course-div-5"></div>
+            <div class="course-divs-container" id="course-div-6"></div>
+            <div class="course-divs-container" id="course-div-7"></div>
+            <div class="course-divs-container" id="course-div-8"></div>
 
+        </div>
+    </div>
     <div class="demo-div ">
-
+        sdlkfajlk
     </div>
 </body>
+
+</html>
 
 </html>
 
