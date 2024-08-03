@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- This link is for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- this is icons script -->
+    <script src="https://kit.fontawesome.com/7234580fe1.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    body {
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .nav-cont {
+        background-color: #650000;
+        width: 100%;
+        height: 48px;
+        border-bottom: 1px solid #f29509;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-cont-inner {
+        width: 90%;
+        height: 44px;
+        background-color: transparent;
+        display: flex;
+    }
+    
+    .nav-cont-phone-email {
+        width: 380px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    
+    .mailto {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav-cont-phone {
+        width: 120px;
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        font-size: 13px;
+        padding-top: 11px;
+        padding-left: 21px;
+        transition: 0.3s;
+    }
+    
+    .nav-cont-email {
+        width: 240px;
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        font-size: 14px;
+        padding-top: 11px;
+        transition: 0.3s;
+    }
+    
+    .nav-cont-email:hover {
+        color: rgb(173, 172, 172);
+    }
+    
+    .mailto:hover {
+        color: rgb(173, 172, 172);
+    }
+    
+    .nav-cont-phone:hover {
+        color: rgb(173, 172, 172);
+    }
+    
+    .tel {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #noti-section-click {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .click-noti {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .tel:hover {
+        text-decoration: none;
+        color: rgb(231, 231, 231);
+    }
+    
+    .fa-envelope-open-text {
+        margin-left: 6px;
+        margin-right: 10px;
+    }
+    
+    .fa-phone {
+        margin-right: 10px;
+        color: white;
+    }
+    
+    .notification-cont {
+        width: 143px;
+        height: 40px;
+        background-color: #84c340;
+        margin-left: 652px;
+        margin-top: 2px;
+        font-family: "Roboto Slab", serif;
+        color: white;
+        text-align: center;
+        padding-top: 11.5px;
+        text-transform: uppercase;
+        font-size: 12.5px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+    
+    .notification-cont:hover {
+        background-color: #62922f;
+        font-weight: bolder;
+    }
+    /* this is the css of main header */
+    /* datafd asf a */
+    
+    .main-body-nav-cont {
+        width: 100%;
+        height: 74px;
+        background-color: rgb(151, 151, 151);
+        backdrop-filter: blur(40px);
+        display: flex;
+    }
+    
+    .main-body-nav-logo-cont {
+        width: 280px;
+        height: 74px;
+        background-color: transparent;
+        background-image: url("logo-gunpur-clg-1.png");
+        margin-left: 70px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .main-body-nav-logo-cont {
+        color: white;
+        transition: 0.4s;
+    }
+    
+    .main-body-nav-logo-cont:hover {
+        opacity: 0.7;
+    }
+    
+    .main-body-div-section {
+        width: 70%;
+        height: 74px;
+        margin-left: 38px;
+        background-color: transparent;
+        isolation: isolate;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .main-body-nav-divs {
+        /* width: 110px; */
+        height: 40px;
+        background-color: transparent;
+        font-size: 13px;
+        font-family: "Roboto Slab", serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border-radius: 4px;
+        transition: 0.4s;
+    }
+    
+    .fa-angle-down {
+        margin-left: 6px;
+        font-weight: bold;
+    }
+    
+    .main-body-nav-divs:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-shadow: 1px 1px 20px black;
+        border: 1px solid white;
+        background-color: transparent;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.4s;
+    }
+    
+    #main-body-nav-academics:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-Department:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-facilities:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-syllabus:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-naac:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-iqac:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    #main-body-nav-gallery:hover {
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        /* text-shadow: 1px 1px 20px black; */
+        border: 1px solid white;
+        background-color: #2c5200;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    /* this is the css of links */
+    
+    .links-abouts {
+        color: white;
+        text-decoration: none;
+    }
+    /* this is body content section */
+    
+    .body-content {
+        height: 400px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        align-items: center;
+        align-content: center;
+        border: 2px solid black;
+        transition: 1s;
+    }
+    
+    .body-content:hover {
+        content: "pending";
+        font-size: 40px;
+        color: green;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+    /* <!--footer-links -section css--> */
+    
+    .footer-container {
+        width: 100%;
+        height: 400px;
+        background-color: #ebeaea;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fot-cont-iner-cont {
+        width: 92%;
+        height: 380px;
+        background-color: #ebeaea;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .fot-divs {
+        width: 320px;
+        height: 100%;
+        background-color: #ebeaea;
+        /* border: 1px solid black; */
+    }
+    
+    .fot-header {
+        width: 100%;
+        height: 26px;
+        background-color: #ebeaea;
+        font-family: "Roboto Slab", serif;
+        font-size: 13px;
+        color: rgb(0, 0, 0);
+        padding-left: 10px;
+        align-content: center;
+        border-left: 4px solid #650000;
+    }
+    
+    .fot-ad-desc-1 {
+        width: 100%;
+        height: 30px;
+        background-color: #ebeaea;
+        /* border: 1px solid black; */
+        align-content: center;
+        padding-left: 10px;
+        font-family: "Roboto Slab", serif;
+        font-size: 13px;
+    }
+    
+    .fot-ad-desc-1:hover {
+        color: #1f991f;
+        text-shadow: 1px 1px 1px rgb(194, 194, 194);
+        /* transition: 0.1s; */
+    }
+    
+    #flow-us-on {
+        margin-top: 10px;
+    }
+    
+    #flow-us-on:hover {
+        background-color: #d4d2d2;
+        transition: 0.4s;
+        color: #650000;
+        /* transition: 0.2s; */
+    }
+    
+    .follow-us-on-cont-inner {
+        width: 100%;
+        height: 70px;
+        background-color: #ebeaea;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .flw-in-divs {
+        width: 60px;
+        height: 60px;
+        background-color: #ebeaea;
+        border-radius: 4px;
+        font-size: 22px;
+        border: 1px solid #650000;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        align-content: center;
+    }
+    /* hover of footer */
+    
+    #hov-ad-ft:hover {
+        background-color: #d4d2d2;
+        transition: 0.3s;
+        color: #650000;
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    }
+    /* follow us hover css */
+    
+    .fa-whatsapp:hover {
+        color: green;
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    
+    .fa-youtube:hover {
+        color: rgb(255, 0, 0);
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    
+    .fa-x-twitter:hover {
+        color: rgb(3, 3, 3);
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    
+    .fa-instagram:hover {
+        color: rgb(117, 32, 79);
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+    
+    .flw-in-divs:hover {
+        /* color: green; */
+        border: 1px solid rgb(184, 184, 184);
+    }
+    
+    #wp-bg:hover {
+        /* background-color: rgb(209, 209, 209); */
+    }
+    /* This is copy right section */
+    
+    .copy-right-section {
+        width: 100%;
+        height: 30px;
+        align-content: center;
+        text-align: center;
+        padding: 0px;
+        background-color: #650000;
+        color: rgb(211, 211, 211);
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-family: "Roboto Slab", serif;
+    }
+    
+    #github-link {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #github-link:hover {
+        text-decoration: none;
+        color: rgb(41, 231, 16);
+        text-shadow: 1px 2px 6px white;
+    }
+</style>
+
+<body>
+    <div class="nav-cont">
+        <div class="nav-cont-inner">
+            <div class="nav-cont-phone-email">
+                <div class="nav-cont-phone"><i class="fa-solid fa-phone"></i>
+                    <a class="tel" href=" tel:+919437581969">94375-81969</a>
+                </div>
+                <div class="nav-cont-email "><i class="fa-solid fa-envelope-open-text "></i><a class="mailto " href="mailto:gunpurcollegegunpur@gmail.com ">gunpurcollegegunpur@gmail.com</a></div>
+            </div>
+            <div class="notification-cont ">
+                <a href="#noti-section-click" class="click-noti">Notification</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- this is the main-header-section -->
+    <!-- <div class="main-header">
+        <div class="main-logo-cont">
+            <div class="logo-gnp"></div>
+        </div>
+        <div class="main-logo-cont-2">
+
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+    <div class="main-body-nav-cont ">
+
+        <div class="main-body-nav-logo-cont "></div>
+        <div class="main-body-div-section ">
+            <div id="main-body-nav-about-us " class="main-body-nav-divs ">
+                <a href="aboutus.html" class="links-abouts">About us</a><i class="fa-solid fa-angle-down "></i></div>
+
+
+            <div id="main-body-nav-academics " class="main-body-nav-divs ">
+                <a href="academics.html" class="links-abouts">Academics</a><i class="fa-solid fa-angle-down "></i></div>
+            <div id="main-body-nav-Department " class="main-body-nav-divs ">
+                <a href="department.html" class="links-abouts">Departments</a><i class="fa-solid fa-angle-down "></i></div>
+            <div id="main-body-nav-facilities " class="main-body-nav-divs ">
+                <a href="facilities.html" class="links-abouts">facilities</a><i class="fa-solid fa-angle-down "></i></div>
+            <div id="main-body-nav-syllabus " class="main-body-nav-divs ">
+                <a href="syllabus.html" class="links-abouts">syllabus</a><i class="fa-solid fa-angle-down "></i></div>
+            <div id="main-body-nav-naac " class="main-body-nav-divs ">
+                <a href="nacc.html" class="links-abouts">nacc</a><i class="fa-solid fa-angle-down "></i></div>
+            <div id="main-body-nav-iqac " class="main-body-nav-divs ">
+                <a href="iqac.html" class="links-abouts">iqac</a><i class="fa-solid fa-angle-down "></i></div>
+            <div id="main-body-nav-gallery " class="main-body-nav-divs ">
+                <a href="gallery.html" class="links-abouts">gallery</a><i class="fa-solid fa-angle-down "></i></div>
+        </div>
+
+
+    </div>
+    <!-- this is body content-section -->
+
+    <div class="body-content">Syllabus-Content-section-pending</div>
+
+    <!--footer-links -section -->
+    <div class="footer-container ">
+        <div class="fot-cont-iner-cont ">
+            <!-- 1div start-->
+            <div class="fot-divs ">
+                <div class="fot-header " id="hov-ad-ft ">Address</div>
+
+                <div class="fot-ad-desc-1 ">Gunupur, Rayagada, Odisha 765022</div>
+                <div class="fot-ad-desc-1 ">Dist : Rayagada (Odisha)</div>
+                <div class="fot-ad-desc-1 ">Mob : +91 94375-81969</div>
+                <div class="fot-ad-desc-1 ">Tele : 123456789</div>
+                <div class="fot-ad-desc-1 ">E-mail : gunupurcollegegunupur@gmail.com</div>
+                <div class="fot-ad-desc-1 ">Website : www.gunupurcollege.org.in</div>
+                <div class="fot-header " id="flow-us-on ">Follow us on</div>
+                <div class="follow-us-on-cont-inner ">
+                    <div class="flw-in-divs " id="wp-bg ">
+
+
+                        <i class="fa-brands fa-whatsapp "></i>
+                    </div>
+                    <div class="flw-in-divs ">
+                        <i class="fa-brands fa-instagram "></i>
+                    </div>
+                    <div class="flw-in-divs ">
+                        <i class="fa-brands fa-x-twitter "></i>
+                    </div>
+                    <div class="flw-in-divs ">
+
+
+                        <i class="fa-brands fa-youtube "></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 2div start-->
+
+            <div class=" fot-divs ">
+                <div class="fot-header " id="hov-ad-ft ">Quick Links</div>
+                <div class="fot-ad-desc-1 ">Common Prospectus for +3 Admission 2024-2025</div>
+                <div class="fot-ad-desc-1 ">Common Prospectus for +2 Admission 2024-2025</div>
+                <div class="fot-ad-desc-1 ">Annual Reports</div>
+                <div class="fot-ad-desc-1 ">Nss</div>
+                <div class="fot-ad-desc-1 ">library</div>
+                <div class="fot-ad-desc-1 ">NCC</div>
+                <div class="fot-ad-desc-1 ">Departments</div>
+                <div class="fot-ad-desc-1 ">Notice</div>
+                <div class="fot-ad-desc-1 ">Governing body</div>
+            </div>
+            <!-- 3div start-->
+            <div class="fot-divs ">
+                <div class="fot-header " id="hov-ad-ft ">Academic Links</div>
+                <div class="fot-ad-desc-1 ">Examination</div>
+                <div class="fot-ad-desc-1 ">Time-table</div>
+                <div class="fot-ad-desc-1 ">Syllabus</div>
+                <div class="fot-ad-desc-1 ">Result records +2</div>
+                <div class="fot-ad-desc-1 ">Result records +3</div>
+            </div>
+            <!-- 4div start-->
+
+            <div class="fot-divs ">
+                <div class="fot-header " id="hov-ad-ft ">Other Links</div>
+                <div class="fot-ad-desc-1 ">Nua-o</div>
+                <div class="fot-ad-desc-1 ">Support staff</div>
+                <div class="fot-ad-desc-1 ">Beherampur University</div>
+                <div class="fot-ad-desc-1 ">School and Mass Education</div>
+                <div class="fot-ad-desc-1 ">Higher Education Department</div>
+                <div class="fot-ad-desc-1 ">Gov of india official portal</div>
+                <div class="fot-ad-desc-1 ">Scholarship</div>
+                <div class="fot-ad-desc-1 ">RTI Odisha</div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- This is copy right section -->
+    <div class="copy-right-section ">© Copyright 2024 Gunupur College Gunupur, Designed by
+        <a href="https://github.com/Vikashartist " id="github-link ">Bikash mahanandia</a>, All Right Reserved.</div>
+</body>
+
+</html>

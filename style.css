@@ -222,15 +222,15 @@ html {
 
 .fa-angle-down {
     margin-left: 6px;
-    font-weight: bold
+    font-weight: bold;
 }
 
-#main-body-nav-about-us:hover {
+.main-body-nav-divs:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-shadow: 1px 1px 20px black;
     border: 1px solid white;
-    background-color: #2c5200;
+    background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.4s;
 }
