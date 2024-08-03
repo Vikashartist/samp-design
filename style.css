@@ -34,6 +34,11 @@ body {
     align-items: center;
 }
 
+.mailto {
+    color: white;
+    text-decoration: none;
+}
+
 .nav-cont-phone {
     width: 120px;
     height: 30px;
@@ -59,8 +64,32 @@ body {
     color: rgb(173, 172, 172);
 }
 
+.mailto:hover {
+    color: rgb(173, 172, 172);
+}
+
 .nav-cont-phone:hover {
     color: rgb(173, 172, 172);
+}
+
+.tel {
+    text-decoration: none;
+    color: white;
+}
+
+#noti-section-click {
+    text-decoration: none;
+    color: white;
+}
+
+.click-noti {
+    text-decoration: none;
+    color: white;
+}
+
+.tel:hover {
+    text-decoration: none;
+    color: rgb(231, 231, 231);
 }
 
 .fa-envelope-open-text {
@@ -864,7 +893,7 @@ a#\#event-link:hover {
 .inst-award-section-inner {
     width: 92%;
     height: 400px;
-    background-color: rgb(215, 236, 243);
+    background-color: rgb(255, 255, 255);
     /* background-image: url("scholarship-doodle.png"); */
     filter: brightness(100px);
     border-radius: 8px;
@@ -886,6 +915,48 @@ a#\#event-link:hover {
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgb(68, 68, 68);
     user-select: none;
+}
+
+.institutional-award-divs-section-inner {
+    width: 100%;
+    height: 86%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.institutional-award-divisions-2 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+.award-inner-heading {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    color: #650000;
+    /* font-weight: bold; */
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.award-inner-heading-description {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: "Roboto Slab", serif;
+    padding: 10px;
+    line-height: 24px;
 }
 
 
@@ -1034,7 +1105,7 @@ a#\#event-link:hover {
 
 .flw-in-divs:hover {
     /* color: green; */
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(184, 184, 184);
 }
 
 #wp-bg:hover {
@@ -1049,11 +1120,12 @@ a#\#event-link:hover {
     height: 30px;
     align-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     background-color: #650000;
     color: rgb(211, 211, 211);
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
+    font-family: "Roboto Slab", serif;
 }
 
 #github-link {
@@ -1063,5 +1135,6 @@ a#\#event-link:hover {
 
 #github-link:hover {
     text-decoration: none;
-    color: rgb(255, 238, 0);
+    color: rgb(41, 231, 16);
+    text-shadow: 1px 2px 6px white;
 }
