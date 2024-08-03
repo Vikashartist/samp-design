@@ -9,6 +9,10 @@ body {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-cont {
     background-color: #650000;
     width: 100%;
@@ -668,6 +672,7 @@ body {
     list-style: none;
     font-family: "Roboto Slab", serif;
     background-color: #e6e3e3;
+    color: #650000;
     margin-top: 6px;
     margin-left: 6px;
     margin-right: 6px;
@@ -700,22 +705,28 @@ body {
     border: 4px solid rgb(175, 172, 172);
 }
 
-#section-tander-link {
+#section-tander {
     text-decoration: none;
-    color: #ffffff
+    color: #ffffff;
 }
 
-#section-tander-link:hover {
+#section-tander:hover {
     text-decoration: none;
     color: #650000
 }
 
-#event-link {
-    color: white;
+#event-link-sec {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-#event-link:hover {
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#event-link-sec:hover {
     text-decoration: none;
     color: #650000;
 }
